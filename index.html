@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Portfolio — Your Name</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">Samyog phuyal</h1>
+      <button class="menu-toggle" aria-expanded="false">☰</button>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h2>Hi, I'm <strong>Your Name</strong></h2>
+          <p>Computer science student & aspiring developer. I build web apps, visualizations, and small tools.</p>
+          <a class="btn" href="#projects">See my work</a>
+        </div>
+        <div class="hero-right">
+          <!-- Simple SVG avatar placeholder -->
+          <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="160" height="160" rx="12" fill="#e6eef8"/>
+            <circle cx="80" cy="56" r="28" fill="#f6f9ff" stroke="#d7e6fb" stroke-width="4"/>
+            <rect x="32" y="96" width="96" height="40" rx="8" fill="#f6f9ff" stroke="#d7e6fb" stroke-width="4"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>Short bio goes here. Mention your major, interests, and what you want to work on.</p>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Project One</h4>
+          <p>Short description of the project. Tools: HTML, CSS, JS.</p>
+          <a href="#" class="card-link">View</a>
+        </article>
+        <article class="card">
+          <h4>Project Two</h4>
+          <p>Short description of the project. Tools: Python, Flask.</p>
+          <a href="#" class="card-link">View</a>
+        </article>
+        <article class="card">
+          <h4>Project Three</h4>
+          <p>Short description of the project. Tools: React.</p>
+          <a href="#" class="card-link">View</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="container skills">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML & CSS <span class="skill-bar" data-level="85"><span></span></span></li>
+        <li>JavaScript <span class="skill-bar" data-level="75"><span></span></span></li>
+        <li>Python <span class="skill-bar" data-level="70"><span></span></span></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <form id="contactForm" novalidate>
+        <label>Name<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button type="submit" class="btn">Send</button>
+        <p id="formMessage" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Your Name — Built with ♥</small>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
